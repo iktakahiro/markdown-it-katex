@@ -27,8 +27,9 @@ npm install @iktakahiro/markdown-it-katex
 Use it in your javascript
 
 ```javascript
-var md = require('markdown-it')(),
-    mk = require('@iktakahiro/markdown-it-katex');
+var MarkdownIt = require('markdown-it'),
+    md = new MarkdownIt();
+var mk = require('@iktakahiro/markdown-it-katex');
 
 md.use(mk);
 
